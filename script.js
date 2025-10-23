@@ -109,3 +109,19 @@ console.log([...arr, ...arr2]); // using spread operator to concatenate
 // join method
 console.log(letters.join(' - ')); // joins elements into a string with ' - ' as separator
 */
+
+// AT METHOD
+/*
+const arr = [23, 11, 64];
+console.log(arr[0]);
+console.log(arr.at(0));
+
+// getting the last element
+console.log(arr[arr.length - 1]);
+console.log(arr.slice(-1)[0]);
+console.log(arr.at(-1));
+
+// also works on strings
+console.log('anastasia'.at(0)); 
+console.log('anastasia'.at(-1));
+*/
