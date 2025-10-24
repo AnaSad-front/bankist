@@ -218,3 +218,14 @@ const movementsDescriptions = movements.map(
 );
 console.log(movementsDescriptions);
 */
+
+// FILTER METHOD
+/*
+const movements = [200, -100, 340, -300, -20, 50, 400, -460];
+
+const deposits = movements.filter(mov => mov > 0);
+console.log(deposits);
+
+const withdrawals = movements.filter(mov => mov < 0);
+console.log(withdrawals);
+*/
