@@ -423,3 +423,25 @@ console.log(movements.some(deposit)); // true
 console.log(movements.every(deposit)); // false
 console.log(movements.filter(deposit)); // [200, 340, 50, 400]
 */
+
+// FLAT AND FLATMAP
+/*
+const arr = [[1, 2, 3], [4, 5, 6], 7, 8];
+console.log(arr.flat()); // [1, 2, 3, 4, 5, 6, 7, 8]
+
+const arrDeep = [[[1, 2], 3], [4, [5, 6]], 7, 8];
+console.log(arrDeep.flat(2)); // [1, 2, 3, 4, 5, 6, 7, 8]
+
+// flat method to get all movements from all accounts
+const overallBalance = accounts
+  .map(acc => acc.movements)
+  .flat()
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(overallBalance); // 17840
+
+// flatMap method
+const overallBalance2 = accounts
+  .flatMap(acc => acc.movements)
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(overallBalance2); // 17840
+*/
