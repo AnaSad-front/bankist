@@ -291,3 +291,14 @@ const totalDepositsUSD = movements
 
 console.log(totalDepositsUSD);
 */
+
+// FIND METHOD
+/*
+const movements = [200, -100, 340, -300, -20, 50, 400, -460];
+
+const firstWithdrawal = movements.find(mov => mov < 0);
+console.log(firstWithdrawal);
+
+const account = accounts.find(acc => acc.owner === 'Jessica Davis');
+console.log(account);
+*/
