@@ -480,3 +480,47 @@ console.log(movements); // [-460, -300, -100, -20, 50, 200, 340, 400]
 movements.sort((a, b) => b - a);
 console.log(movements); // [400, 340, 200, 50, -20, -100, -300, -460]
 */
+
+// MORE WAYS OF CREATING AND FILLING ARRAYS
+/*
+const arr = [1, 2, 3, 4, 5, 6, 7];
+console.log(new Array(1, 2, 3, 4, 5, 6, 7));
+
+// empty arrays + fill method
+const x = new Array(7);
+console.log(x); // [ <7 empty items> ]
+console.log(x.map(() => 5)); // [ <7 empty items> ] - does not work
+
+x.fill(1);
+console.log(x); // [1, 1, 1, 1, 1, 1, 1]
+
+x.fill(2, 3, 5);
+console.log(x); // [1, 1, 1, 2, 2, 1, 1]
+
+arr.fill(23, 2, 6);
+console.log(arr); // [1, 2, 23, 23, 23, 23, 7]
+
+// Array.from
+const y = Array.from({ length: 7 }, () => 1);
+console.log(y); // [1, 1, 1, 1, 1, 1, 1]
+
+const z = Array.from({ length: 7 }, (_, i) => i + 1);
+console.log(z); // [1, 2, 3, 4, 5, 6, 7]
+
+const randomDiceRolls = Array.from(
+  { length: 100 },
+  () => Math.trunc(Math.random() * 6) + 1
+);
+console.log(randomDiceRolls);
+
+labelBalance.addEventListener('click', function () {
+  const movementsUI = Array.from(
+    document.querySelectorAll('.movements__value'),
+    el => Number(el.textContent.replace('€', ''))
+  );
+  console.log(movementsUI);
+
+  // const movementsUI2 = [...document.querySelectorAll('.movements__value')];
+  // console.log(movementsUI2);
+});
+*/
