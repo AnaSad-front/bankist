@@ -690,3 +690,26 @@ labelBalance.addEventListener('click', function () {
   });
 });
 */
+
+// NUMERIC SEPARATORS
+/*
+const diameter = 287_460_000_000;
+console.log(diameter); // 287460000000
+
+const priceCents = 345_99;
+console.log(priceCents); // 34599
+
+const transferFee = 15_00;
+console.log(transferFee); // 1500
+
+const PI = 3.14_15;
+console.log(PI); // 3.1415
+
+const largeNum = 2_531_456_789;
+console.log(largeNum); // 2531456789
+
+console.log(Number('230000')); // 230000
+console.log(Number('230_000')); // NaN
+console.log(parseInt('230_000')); // 230
+console.log(parseFloat('230_000.45')); // 230
+*/
