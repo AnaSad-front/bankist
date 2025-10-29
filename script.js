@@ -713,3 +713,35 @@ console.log(Number('230_000')); // NaN
 console.log(parseInt('230_000')); // 230
 console.log(parseFloat('230_000.45')); // 230
 */
+
+// WORKING WITH BIGINT
+/*
+console.log(2 ** 53 - 1); // 9007199254740991
+console.log(Number.MAX_SAFE_INTEGER); //same as above
+
+// BigInts are created by appending n to the end of the number or by using the BigInt() function
+console.log(4832904723094723094723094723094n);
+console.log(BigInt(4832904723));
+
+// Operations
+console.log(10000n + 10000n); // 20000n
+console.log(4832904723094723094723094723094n * 100000n); // 483290472309472309472309472309400000n
+// console.log(Math.sqrt(16n)); // error
+
+const huge = 20249237492304723094723094723094n;
+const num = 23;
+// console.log(huge * num); // error
+console.log(huge * BigInt(num)); // 465732462323008231168231178830162n
+
+// exceptions
+console.log(20n > 15); // true
+console.log(20n === 20); // false
+console.log(typeof 20n); // bigint
+console.log(20n == '20'); // true
+
+console.log(huge + ' is really big!');
+
+// Divisions
+console.log(11n / 3n); // 3n
+console.log(10 / 3); // 3.3333333333333335
+*/
