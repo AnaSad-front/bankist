@@ -41,7 +41,7 @@ console.log(calcAverageHumanAge(dogs2));
 */
 
 // CODING CHALLENGE 4
-
+/*
 const dogs = [
   { weight: 22, curFood: 250, owners: ['Alice', 'Bob'] },
   { weight: 8, curFood: 200, owners: ['Matilda'] },
@@ -90,3 +90,4 @@ const dogsSorted = dogs
   .slice()
   .sort((x, y) => x.recommendedFood - y.recommendedFood);
 console.log(dogsSorted);
+*/
