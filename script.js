@@ -668,3 +668,25 @@ console.log((2.7).toFixed(3)); // '2.700'
 console.log((2.345).toFixed(2)); // '2.35'
 console.log(+(2.345).toFixed(2)); // 2.35 - converts string to number
 */
+
+// THE REMAINDER OPERATOR
+/*
+console.log(5 % 2); // 1 its the remainder of 5 divided by 2
+console.log(5 / 2); // 2.5 5=2*2+1
+console.log(8 % 3); // 2
+console.log(8 / 3); // 2.6666666666666665
+
+const isEven = n => n % 2 === 0;
+
+console.log(isEven(8)); // true
+console.log(isEven(23)); // false
+console.log(isEven(514)); // true
+
+labelBalance.addEventListener('click', function () {
+  [...document.querySelectorAll('.movements__row')].forEach(function (row, i) {
+    // i is the index of the current row
+    if (i % 2 === 0) row.style.backgroundColor = 'orangered';
+    if (i % 3 === 0) row.style.backgroundColor = 'blue';
+  });
+});
+*/
